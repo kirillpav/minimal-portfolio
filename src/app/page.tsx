@@ -1,11 +1,23 @@
 import styles from "./page.module.css";
 import Title from "./components/title";
 import { Fragment } from "react";
+import MainText from "./components/mainText";
+import Work from "./components/work";
+import About from "./components/about";
+import Contact from "./components/contact";
+import Sidebar from "./components/sidebar";
 
 export default function Home() {
 	return (
 		<>
-			<Title />
+			<Sidebar />
+			<div className={styles.container}>
+				<Title />
+				<MainText />
+				<Work />
+				<About />
+				<Contact />
+			</div>
 		</>
 	);
 }

@@ -1,0 +1,20 @@
+.container {
+	/* width: 33%; */
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	margin-left: 80px;
+	margin-top: 160px;
+}
+
+.navLink {
+	font-size: 14px;
+	color: black;
+	font-weight: 400;
+	width: 0;
+}
+
+.navLink:hover {
+	text-decoration: underline;
+}

@@ -1,0 +1,17 @@
+.container {
+	margin-top: 50px;
+}
+
+.title {
+	text-align: center;
+	margin-bottom: 26px;
+}
+
+.text {
+	/* margin: 0 auto; */
+	/* margin-top: 50px; */
+	font-size: 18px;
+	color: #8c92ac;
+	font-weight: 400;
+	text-align: left;
+}

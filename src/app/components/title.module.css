@@ -1,7 +1,13 @@
-.container {
-	margin-left: auto;
+.outer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
 
-	margin-top: 144px;
+.container {
+	margin: 0 auto;
+	margin-top: 100px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -10,19 +16,24 @@
 
 .title {
 	font-size: 96px;
-	font-weight: bold;
+	font-weight: 600;
 	margin: 0;
-	text-align: center;
+	line-height: 1;
 }
 
-.coordinates {
-	font-size: 20px;
-	font-weight: 300;
-	margin: 0;
+.info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start; /* Align children to the left */
+	text-align: left; /* Align text to the left */
+	width: 100%; /* Take full width to align left */
+	max-width: 200px; /* Adjust width as needed to align under the title */
+	margin-left: 8px;
 }
 
+.coordinates,
 .location {
-	font-size: 20px;
-	font-weight: 300;
+	font-size: 14px;
+	font-weight: 200;
 	margin: 0;
 }
