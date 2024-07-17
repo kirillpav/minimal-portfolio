@@ -6,6 +6,7 @@ import Work from "./components/work";
 import About from "./components/about";
 import Contact from "./components/contact";
 import Sidebar from "./components/sidebar";
+import StickyFooter from "./components/sticky-footer/stickyFooter";
 
 export default function Home() {
 	return (
@@ -17,6 +18,7 @@ export default function Home() {
 				<Work />
 				<About />
 				<Contact />
+				<StickyFooter />
 			</div>
 		</>
 	);
