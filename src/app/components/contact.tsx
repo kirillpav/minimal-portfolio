@@ -3,7 +3,7 @@ import styles from "./contact.module.css";
 export default function Contact() {
 	return (
 		<div id="contact" className={styles.container}>
-			<h2 className={styles.title}>CONTACT</h2>
+			<h2 className={styles.title}>REACH OUT</h2>
 			<div className={styles.socialContainer}>
 				<a href="https://www.linkedin.com/in/kirillpavlov2020/">
 					<svg

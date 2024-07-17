@@ -4,3 +4,18 @@
 	top: 100px;
 	right: 60px;
 }
+
+.title {
+	margin-bottom: 26px;
+}
+
+.socialContainer {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.socialContainer a {
+	margin-bottom: 26px;
+}

@@ -10,11 +10,13 @@
 
 .navLink {
 	font-size: 14px;
-	color: black;
+	color: #111108;
 	font-weight: 400;
 	width: 0;
+	transition: color 0.2s ease-in-out;
 }
 
 .navLink:hover {
 	text-decoration: underline;
+	color: #acb159;
 }

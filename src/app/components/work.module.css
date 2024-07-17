@@ -11,10 +11,50 @@
 .projectsContainer {
 	margin: 0 auto;
 	display: flex;
+	flex-direction: column;
 	gap: 16px;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 	justify-content: space-between;
 	/* width: 50%; */
+	align-items: center;
+}
+
+.project {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* justify-content: space-between; */
+}
+
+.projectSelector {
+	border-bottom: 1px #f3f3f3 solid;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 26px;
+}
+
+.projectSelector a {
+	color: #111108;
+	transition: color 0.2s ease-in-out;
+}
+
+.projectSelector a:hover {
+	color: #acb159;
+}
+
+.projectDetails {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.projectDetails p {
+	text-decoration: underline;
+}
+
+.selected {
+	border-bottom: 1px #acb159 solid;
 }
 
 .projectsContainer a img {
@@ -27,4 +67,26 @@
 
 .projectsContainer a img:hover {
 	filter: drop-shadow(0px 1px 2px gray);
+}
+
+.projectOptions {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	border-bottom: 1px #f3f3f3 solid;
+	margin-bottom: 16px;
+}
+
+.projectOptions a {
+	color: #111108;
+	transition: color 0.2s ease-in-out;
+}
+
+.projectOptions a:hover {
+	color: #acb159;
+}
+
+.desc {
+	font-size: 18px;
+	color: #111108;
 }

@@ -3,10 +3,12 @@ import styles from "./mainText.module.css";
 export default function MainText() {
 	return (
 		<p className={styles.text}>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor augue
-			sollicitudin lacinia luctus. Mauris semper ultrices leo, eu finibus augue
-			pharetra in. Pellentesque habitant morbi tristique senectus et netus et
-			malesuada fames ac turpis egestas. Pellentesque non egestas s
+			I am an aspiring Software Engineer. I am passionate about accessible and
+			beautiful design, and I strive to create the best possible user
+			experience. I am currently a web developer intern at b0arding.com, a
+			hospitality startup located in San Francisco. I am also a sophomore
+			Computer Science student at San Francisco State University. Below is some
+			of my highlighted work.
 		</p>
 	);
 }

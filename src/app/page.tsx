@@ -17,7 +17,7 @@ export default function Home() {
 				<MainText />
 				<Work />
 				<About />
-				<Contact />
+				{/* <Contact /> */}
 				<StickyFooter />
 			</div>
 		</>
