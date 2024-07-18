@@ -18,7 +18,7 @@ export default function Work() {
 
 	return (
 		<div id="work" className={styles.container}>
-			<h2 className={styles.title}>My Work</h2>
+			<h2 className={styles.title}>WORK</h2>
 			<div className={styles.projectSelector}>
 				<a
 					href="#"
@@ -47,14 +47,22 @@ export default function Work() {
 			<div className={styles.projectsContainer}>
 				{selectedProject && (
 					<div className={styles.project}>
-						<a href={projects[selectedProject].url}>
-							<img src={projects[selectedProject].img}></img>
+						<a href={projects[selectedProject as keyof typeof projects].url}>
+							<img
+								src={projects[selectedProject as keyof typeof projects].img}
+							></img>
 						</a>
 						<div className={styles.projectOptions}>
-							<a href={projects[selectedProject].github}>GitHub </a>
+							<a
+								href={projects[selectedProject as keyof typeof projects].github}
+							>
+								GitHub{" "}
+							</a>
 						</div>
 						<div>
-							<p className={styles.desc}>{projects[selectedProject].desc}</p>
+							<p className={styles.desc}>
+								{projects[selectedProject as keyof typeof projects].desc}
+							</p>
 						</div>
 					</div>
 				)}
