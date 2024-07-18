@@ -1,5 +1,4 @@
 import styles from "./sidebar.module.css";
-import WorkHistory from "./workHistory/workHistory";
 
 export default function Sidebar() {
 	return (
@@ -17,7 +16,6 @@ export default function Sidebar() {
 				<a className={styles.navLink} href="#contact">
 					Contact
 				</a>
-				{/* <WorkHistory /> */}
 			</div>
 		</>
 	);
