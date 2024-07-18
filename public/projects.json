@@ -19,11 +19,5 @@
 		"github": "",
 		"img": "./imgs/b0arding.png",
 		"desc": "During my internship at b0arding, a travel startup, I developed a blog platform designed to increase engagement with the main platform and provide readers with valuable insights and tips on various aspects of traveling abroad. I created the design in Figma and implemented it using JavaScript, CSS, and Handlebars for templating."
-	},
-	"Project 4": {
-		"name": "Advice Generator",
-		"url": "https://kirillpav.github.io/advice-generator/",
-		"github": "https://github.com/kirillpav/advice-generator",
-		"img": "./imgs/randomiser.png"
 	}
 }
