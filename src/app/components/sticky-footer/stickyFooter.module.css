@@ -9,6 +9,11 @@
 	margin-bottom: 26px;
 }
 
+.icons {
+	display: flex;
+	flex-direction: column;
+}
+
 .socialContainer {
 	margin-top: 50px;
 	display: flex;
@@ -18,4 +23,34 @@
 
 .socialContainer a {
 	margin-bottom: 26px;
+}
+
+@media (max-width: 600px) {
+	.icons {
+		flex-direction: row;
+		justify-content: space-around !important;
+	}
+	.container {
+		position: relative;
+		right: auto !important;
+		top: auto;
+	}
+
+	.socialContainer {
+		display: block;
+	}
+
+	.title {
+		text-align: center;
+	}
+}
+
+@media (max-width: 1024px) {
+	.container {
+		right: 30px;
+	}
+
+	.container iframe {
+		display: none;
+	}
 }

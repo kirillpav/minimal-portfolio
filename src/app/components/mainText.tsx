@@ -3,12 +3,12 @@ import styles from "./mainText.module.css";
 export default function MainText() {
 	return (
 		<p className={styles.text}>
-			I am an aspiring Software Engineer. I am passionate about accessible and
-			beautiful design, and I strive to create the best possible user
-			experience. I am currently a web developer intern at b0arding.com, a
-			hospitality startup located in San Francisco. I am also a sophomore
-			Computer Science student at San Francisco State University. Below is some
-			of my highlighted work.
+			I am an aspiring Software Engineer with a passion for creating accessible
+			and visually appealing designs. My goal is to deliver the best possible
+			user experience. Currently, I am a web developer intern at b0arding.com, a
+			hospitality startup based in San Francisco. Additionally, I am a junior
+			studying Computer Science at San Francisco State University. Below are
+			some highlights of my work.
 		</p>
 	);
 }

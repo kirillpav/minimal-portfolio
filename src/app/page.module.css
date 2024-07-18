@@ -3,3 +3,10 @@
 	width: 50%;
 	min-height: 100%;
 }
+
+@media (max-width: 425px) {
+	.container {
+		width: 100%;
+		padding: 10px;
+	}
+}

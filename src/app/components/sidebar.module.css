@@ -20,3 +20,24 @@
 	text-decoration: underline;
 	color: #acb159;
 }
+
+@media (max-width: 600px) {
+	.container {
+		position: relative;
+		margin: 0 auto;
+		flex-direction: row; /* Change to row on mobile screens */
+		align-items: center;
+		justify-content: center; /* Center the links horizontally */
+		width: 100%;
+		top: auto; /* Remove top positioning for mobile */
+		left: auto; /* Remove left positioning for mobile */
+		right: auto; /* Remove right positioning for mobile */
+		margin-top: 40px;
+	}
+
+	.navLink {
+		text-align: center;
+		margin: 8px;
+		width: 100%;
+	}
+}

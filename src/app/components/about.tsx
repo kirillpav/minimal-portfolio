@@ -5,14 +5,16 @@ export default function About() {
 		<div id="about" className={styles.container}>
 			<h2 className={styles.title}>A Little About Me</h2>
 			<p className={styles.text}>
-				My name is Kirill! From a young age I loved computers and video games. I
-				started my software development journey at a FullStack bootcamp in Kyiv,
-				Ukraine. There I learned the fundamentals of full stack web development.
-				To take my skills further I moved to San Francisco and enrolled at SFSU.
-				Shortly after enrollement I got a job as a Web Developer at the
-				univerities academic technology department where I worked for nearly 2
-				years. In this position I worked on many university applications and
-				learned a lot about databasing and back end development.
+				My name is Kirill, and I have been passionate about computers and video
+				games from a young age. My software development journey began at a
+				FullStack bootcamp in Kyiv, Ukraine, where I learned the fundamentals of
+				full stack web development. To further enhance my skills, I moved to San
+				Francisco and enrolled at San Francisco State University. Shortly after
+				enrolling, I secured a position as a Web Developer at the university’s
+				academic technology department. Over nearly two years in this role, I
+				worked on various university applications, gaining extensive experience
+				in databasing and back end development. <br /> Currently, I am looking
+				for an internship for summer 2025.
 			</p>
 		</div>
 	);
