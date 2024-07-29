@@ -2,8 +2,8 @@ import styles from "./contact.module.css";
 
 export default function Contact() {
 	return (
-		<div id="contact" className={styles.container}>
-			<h2 className={styles.title}>REACH OUT</h2>
+		<div id="contact" className="fixed bottom-2 p-3 w-1/2 rounded opacity-80">
+			<h2 className="mb-6 text-center text-primary-color">REACH OUT</h2>
 			<div className={styles.socialContainer}>
 				<a href="https://www.linkedin.com/in/kirillpavlov2020/">
 					<svg

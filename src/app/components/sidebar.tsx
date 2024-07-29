@@ -1,20 +1,45 @@
-import styles from "./sidebar.module.css";
+import Link from "next/link";
+import Modal from "./Modal";
 
-export default function Sidebar() {
+type Props = {
+	searchParams: Record<string, string> | null | undefined;
+};
+
+export default function Sidebar({ searchParams }: Props) {
+	const showModal = searchParams?.modal;
 	return (
 		<>
-			<div className={styles.container}>
-				<a className={styles.navLink} href="#intro">
+			<div className="relative mx-auto flex flex-row items-center justify-center w-full top-auto left-auto right-auto mt-10 md:fixed md:flex md:flex-col md:gap-1 md:items-start md:top-40 md:left-20">
+				<a
+					className="text-sm text-primary-color hover:text-custom-accent transform duration-200 hover:border-b-2 border-b-custom-accent"
+					href="#intro"
+				>
 					Intro
 				</a>
-				<a className={styles.navLink} href="#work">
+				<a
+					className="text-sm text-primary-color hover:text-custom-accent transform duration-200 hover:border-b-2 border-b-custom-accent"
+					href="#work"
+				>
 					Work
 				</a>
-				<a className={styles.navLink} href="#about">
+				<a
+					className="text-sm text-primary-color hover:text-custom-accent transform duration-200 hover:border-b-2 border-b-custom-accent"
+					href="#about"
+				>
 					About
 				</a>
-				<a className={styles.navLink} href="#contact">
+				<Link
+					className="text-sm text-primary-color hover:text-custom-accent transform duration-200 hover:border-b-2 border-b-custom-accent"
+					href="/?modal=true"
+				>
 					Contact
+				</Link>
+				{showModal && <Modal />}
+				<a
+					className="text-sm text-primary-color hover:text-custom-accent transform duration-200 hover:border-b-2 border-b-custom-accent"
+					href="/tech"
+				>
+					Tech
 				</a>
 			</div>
 		</>

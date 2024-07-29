@@ -8,6 +8,10 @@ const supremeFont = localFont({
 	src: "../../public/fonts/TTF/Supreme-Variable.ttf",
 });
 
+const glockFont = localFont({
+	src: "../../public/fonts/GlockGrotesque-Medium.ttf",
+});
+
 export const metadata: Metadata = {
 	title: "PAVLOV",
 	description: "Kirill Pavlov Portfolio Website",
@@ -20,7 +24,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={supremeFont.className}>{children}</body>
+			<body className={glockFont.className}>{children}</body>
 		</html>
 	);
 }
