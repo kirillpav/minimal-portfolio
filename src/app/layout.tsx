@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
+import Sidebar from "./components/sidebar";
+import Title from "./components/title";
 
 const inter = Inter({ subsets: ["latin"] });
 const supremeFont = localFont({
@@ -24,7 +26,11 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={glockFont.className}>{children}</body>
+			<body className={glockFont.className}>
+				<Sidebar />
+				<Title />
+				{children}
+			</body>
 		</html>
 	);
 }

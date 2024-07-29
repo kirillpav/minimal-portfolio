@@ -5,16 +5,15 @@ type Props = {
 	searchParams: Record<string, string> | null | undefined;
 };
 
-export default function Sidebar({ searchParams }: Props) {
-	const showModal = searchParams?.modal;
+export default function Sidebar() {
 	return (
 		<>
 			<div className="relative mx-auto flex flex-row items-center justify-center w-full top-auto left-auto right-auto mt-10 md:fixed md:flex md:flex-col md:gap-1 md:items-start md:top-40 md:left-20">
 				<a
 					className="text-sm text-primary-color hover:text-custom-accent transform duration-200 hover:border-b-2 border-b-custom-accent"
-					href="#intro"
+					href="/"
 				>
-					Intro
+					Home
 				</a>
 				<a
 					className="text-sm text-primary-color hover:text-custom-accent transform duration-200 hover:border-b-2 border-b-custom-accent"
@@ -34,7 +33,7 @@ export default function Sidebar({ searchParams }: Props) {
 				>
 					Contact
 				</Link>
-				{showModal && <Modal />}
+
 				<a
 					className="text-sm text-primary-color hover:text-custom-accent transform duration-200 hover:border-b-2 border-b-custom-accent"
 					href="/tech"

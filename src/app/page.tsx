@@ -11,9 +11,8 @@ import StickyFooter from "./components/sticky-footer/stickyFooter";
 export default function Home() {
 	return (
 		<>
-			<Sidebar />
-			<div className={styles.container}>
-				<Title />
+			{/* <Sidebar /> */}
+			<div className="p-2 w-full md:mx-auto md:w-1/2 min-h-full">
 				<MainText />
 				<Work />
 				<About />

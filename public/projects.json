@@ -1,23 +1,25 @@
 {
-	"Static Archives": {
-		"name": "Static Archive",
-		"url": "",
-		"github": "https://github.com/kirillpav/statics_archives",
-		"img": "./imgs/StaticArchives.png",
-		"desc": "This is a website for an eCommerce keyboard designer. I developed the entire design in Figma to effectively showcase their products and designs. The implementation was done using React.js, JavaScript, and modular CSS"
-	},
-	"Typed": {
-		"name": "Typed",
-		"url": "https://typed-5k0hqo32a-kirillpavs-projects.vercel.app/",
-		"github": "https://github.com/kirillpav/Typed",
-		"img": "./imgs/typed.png",
-		"desc": "This is a Typeracing game designed to test and improve typing skills. I implemented features such as word accuracy validation and a words-per-minute calculator. The website was designed in Figma and developed using React.js, JavaScript, modular CSS, and APIs. The game is hosted on Vercel."
-	},
-	"B0arding Blog": {
-		"name": "b0arding Blog",
-		"url": "https://blog.b0arding.com/",
-		"github": "",
-		"img": "./imgs/b0arding.png",
-		"desc": "During my internship at b0arding, a travel startup, I developed a blog platform designed to increase engagement with the main platform and provide readers with valuable insights and tips on various aspects of traveling abroad. I created the design in Figma and implemented it using JavaScript, CSS, and Handlebars for templating."
+	"projects": {
+		"Static Archives": {
+			"name": "Static Archive",
+			"url": "",
+			"github": "https://github.com/kirillpav/statics_archives",
+			"img": "/imgs/StaticArchives.png",
+			"desc": "This is a website for an eCommerce keyboard designer. I developed the entire design in Figma to effectively showcase their products and designs. The implementation was done using React.js, JavaScript, and modular CSS"
+		},
+		"Typed": {
+			"name": "Typed",
+			"url": "https://typed-5k0hqo32a-kirillpavs-projects.vercel.app/",
+			"github": "https://github.com/kirillpav/Typed",
+			"img": "/imgs/typed.png",
+			"desc": "This is a Typeracing game designed to test and improve typing skills. I implemented features such as word accuracy validation and a words-per-minute calculator. The website was designed in Figma and developed using React.js, JavaScript, modular CSS, and APIs. The game is hosted on Vercel."
+		},
+		"B0arding Blog": {
+			"name": "b0arding Blog",
+			"url": "https://blog.b0arding.com/",
+			"github": "",
+			"img": "/imgs/b0arding.png",
+			"desc": "During my internship at b0arding, a travel startup, I developed a blog platform designed to increase engagement with the main platform and provide readers with valuable insights and tips on various aspects of traveling abroad. I created the design in Figma and implemented it using JavaScript, CSS, and Handlebars for templating."
+		}
 	}
 }
