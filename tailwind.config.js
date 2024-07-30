@@ -9,7 +9,11 @@ module.exports = {
 		"./src/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
-		extend: {},
+		extend: {
+			backgroundImage: {
+				"macbook-overlay": "url('/public/imgs/mb16pro.png')",
+			},
+		},
 		colors: {
 			"primary-color": "#FBFBFB",
 			"custom-accent": "#ff4921",
