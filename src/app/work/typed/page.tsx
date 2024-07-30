@@ -2,10 +2,10 @@ import Image from "next/image";
 
 const Typed = () => {
 	return (
-		<div className="container mx-auto md:w-1/2 mt-12 relative">
+		<div className="container mx-auto md:w-1/2 mt-12 relative p-5">
 			<div className="flex flex-col">
 				<h2 className="uppercase text-primary-color mb-2 text-2xl">Typed</h2>
-				<div className="text-sm text-custom-accent flex gap-10 mb-4">
+				<div className="text-sm text-custom-accent flex gap-10 mb-10">
 					<a href="https://typed-5k0hqo32a-kirillpavs-projects.vercel.app/">
 						url
 					</a>
@@ -19,7 +19,7 @@ const Typed = () => {
 					className="mb-6 rounded-sm"
 				/>
 			</div>
-			<div className="text-primary-color flex flex-col items-end text-sm absolute top-0 right-0">
+			<div className="text-primary-color flex flex-col items-end text-sm absolute top-0 right-5">
 				<h3 className="border-b mb-3">TECH</h3>
 				<p>Figma</p>
 				<p>Next.js</p>

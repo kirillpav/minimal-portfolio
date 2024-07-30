@@ -47,7 +47,7 @@ export default function Work() {
 						<p className="text-primary-color text-3xl mt-1 group-hover:-translate-x-3 group-hover:text-custom-accent transform duration-200">
 							{project.name.toUpperCase()}
 						</p>
-						<p className="text-primary-color text-xs group-hover:translate-x-3 group-hover:text-custom-accent transform duration-200">
+						<p className="hidden md:block text-primary-color text-xs group-hover:translate-x-3 group-hover:text-custom-accent transform duration-200">
 							Design & Development
 						</p>
 					</Link>

@@ -2,12 +2,12 @@ import Image from "next/image";
 
 const StaticArchive = () => {
 	return (
-		<div className="container mx-auto md:w-1/2 mt-12 relative">
+		<div className="container mx-auto md:w-1/2 mt-12 relative p-5">
 			<div className="flex flex-col ">
-				<h2 className="uppercase text-primary-color mb-6 text-2xl">
+				<h2 className="uppercase text-primary-color mb-4 text-2xl">
 					Static Archive
 				</h2>
-				<div className="text-sm text-custom-accent flex gap-10">
+				<div className="text-sm text-custom-accent flex gap-10 mb-10">
 					<a href="https://github.com/kirillpav/Typed">source</a>
 				</div>
 
@@ -20,7 +20,7 @@ const StaticArchive = () => {
 				/>
 				<Image src={"/imgs/sa-img2.png"} alt="img1" width={600} height={500} />
 			</div>
-			<div className="text-primary-color flex flex-col items-end text-sm absolute top-0 right-0">
+			<div className="text-primary-color flex flex-col items-end text-sm absolute top-0 right-5">
 				<h3 className="border-b mb-3">TECH</h3>
 				<p>Figma</p>
 				<p>Next.js</p>

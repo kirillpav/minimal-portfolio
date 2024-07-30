@@ -17,7 +17,7 @@ export default function Sidebar() {
 				</a>
 				<a
 					className="text-sm text-primary-color hover:text-custom-accent transform duration-200 hover:border-b-2 border-b-custom-accent"
-					href="#work"
+					href="/work"
 				>
 					Work
 				</a>
@@ -26,19 +26,6 @@ export default function Sidebar() {
 					href="#about"
 				>
 					About
-				</a>
-				<Link
-					className="text-sm text-primary-color hover:text-custom-accent transform duration-200 hover:border-b-2 border-b-custom-accent"
-					href=""
-				>
-					Contact
-				</Link>
-
-				<a
-					className="text-sm text-primary-color hover:text-custom-accent transform duration-200 hover:border-b-2 border-b-custom-accent"
-					href="/tech"
-				>
-					Tech
 				</a>
 			</div>
 		</>

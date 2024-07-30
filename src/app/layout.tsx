@@ -30,8 +30,9 @@ export default function RootLayout({
 			<body className={glockFont.className}>
 				<Sidebar />
 				<Title />
-				<StickyFooter />
+
 				{children}
+				<StickyFooter />
 			</body>
 		</html>
 	);
