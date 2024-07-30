@@ -4,6 +4,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 import Sidebar from "./components/sidebar";
 import Title from "./components/title";
+import StickyFooter from "./components/sticky-footer/stickyFooter";
 
 const inter = Inter({ subsets: ["latin"] });
 const supremeFont = localFont({
@@ -29,6 +30,7 @@ export default function RootLayout({
 			<body className={glockFont.className}>
 				<Sidebar />
 				<Title />
+				<StickyFooter />
 				{children}
 			</body>
 		</html>

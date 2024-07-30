@@ -2,7 +2,7 @@ import styles from "./mainText.module.css";
 
 export default function MainText() {
 	return (
-		<p className={`${styles.text} text-sm text-primary-color`}>
+		<p className={`text-sm text-primary-color mx-auto mt-12 text-left`}>
 			I am an aspiring Software Engineer with a passion for creating accessible
 			and visually appealing designs. My goal is to deliver the best possible
 			user experience. Currently, I am a web developer intern at b0arding.com, a

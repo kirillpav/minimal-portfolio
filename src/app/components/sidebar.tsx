@@ -8,7 +8,7 @@ type Props = {
 export default function Sidebar() {
 	return (
 		<>
-			<div className="relative mx-auto flex flex-row items-center justify-center w-full top-auto left-auto right-auto mt-10 md:fixed md:flex md:flex-col md:gap-1 md:items-start md:top-40 md:left-20">
+			<div className="relative mx-auto flex flex-row items-center justify-around w-full top-auto left-auto right-auto mt-10 md:fixed md:flex md:flex-col md:gap-1 md:items-start md:top-40 md:left-20">
 				<a
 					className="text-sm text-primary-color hover:text-custom-accent transform duration-200 hover:border-b-2 border-b-custom-accent"
 					href="/"
@@ -29,7 +29,7 @@ export default function Sidebar() {
 				</a>
 				<Link
 					className="text-sm text-primary-color hover:text-custom-accent transform duration-200 hover:border-b-2 border-b-custom-accent"
-					href="/?modal=true"
+					href=""
 				>
 					Contact
 				</Link>
