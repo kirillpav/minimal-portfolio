@@ -29,7 +29,7 @@ export default function Work() {
 		};
 	}, [hovered]);
 
-	const projects = projectsData.projects;
+	const projects = Object.values(projectsData.projects).slice(0, 3);
 
 	return (
 		<div id="work" className="container mt-10">
@@ -48,7 +48,7 @@ export default function Work() {
 							{project.name.toUpperCase()}
 						</p>
 						<p className="hidden md:block text-primary-color text-xs group-hover:translate-x-3 group-hover:text-custom-accent transform duration-200">
-							Design & Development
+							{project.category}
 						</p>
 					</Link>
 				))}

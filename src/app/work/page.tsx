@@ -1,4 +1,4 @@
-import allProjectsData from "../../../public/allProjects.json";
+import allProjectsData from "../../../public/projects.json";
 import Link from "next/link";
 
 const Work = () => {

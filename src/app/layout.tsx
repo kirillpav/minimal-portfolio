@@ -16,8 +16,8 @@ const glockFont = localFont({
 });
 
 export const metadata: Metadata = {
-	title: "PAVLOV",
-	description: "Kirill Pavlov Portfolio Website",
+	title: "Kirill Pavlov",
+	description: "Portfolio Website",
 };
 
 export default function RootLayout({
