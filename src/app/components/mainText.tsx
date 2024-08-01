@@ -7,7 +7,6 @@ export default function MainText() {
 			creative solutions. Currently, I am a web developer intern at
 			b0arding.com, a hospitality startup based in San Francisco. Additionally,
 			I am a junior studying Computer Science at San Francisco State University.{" "}
-			<br /> Below is some of my recent work.
 		</p>
 	);
 }
