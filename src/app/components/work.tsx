@@ -20,7 +20,7 @@ const CustomCursor = ({ mousePosition }) => {
 	const y = useSpring(mousePosition.y, springConfig);
 	return (
 		<motion.div
-			className="fixed p-4 text-xs top-0 left-0 w-16 h-16 rounded-full bg-custom-accent flex items-center justify-center text-primary-color pointer-events-none z-50 uppercase"
+			className="fixed p-3 text-xs top-0 left-0 w-14 h-14 rounded-full bg-custom-accent flex items-center justify-center text-primary-color pointer-events-none z-50 uppercase"
 			style={{
 				left: x,
 				top: y,
@@ -28,7 +28,21 @@ const CustomCursor = ({ mousePosition }) => {
 				translateY: "-50%",
 			}}
 		>
-			View
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="20"
+				height="20"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				class="lucide lucide-arrow-right"
+			>
+				<path d="M5 12h14" />
+				<path d="m12 5 7 7-7 7" />
+			</svg>
 		</motion.div>
 	);
 };
@@ -88,7 +102,7 @@ export default function Work() {
 
 				<a
 					href="/work"
-					className="text-primary-color uppercase mt-12 hover:text-custom-accent hover:bg-bla transform duration-200 text-center p-4 w-1/4 mx-auto"
+					className="text-primary-color uppercase mt-12 text-xs  hover:text-custom-accent hover:bg-bla transform duration-200 text-center p-4 w-1/4 mx-auto"
 				>
 					See More
 				</a>

@@ -1,9 +1,7 @@
 export default function About() {
 	return (
 		<div id="about" className="container mt-10">
-			<h2 className="text-center text-lg mb-6 uppercase text-primary-color">
-				About Me
-			</h2>
+			<h2 className="text-primary-color text-center mb-6">About Me</h2>
 			<p className="text-sm text-primary-color text-left">
 				My name is Kirill, and I have been passionate about computers and video
 				games from a young age. My software development journey began at a
