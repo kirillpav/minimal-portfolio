@@ -11,6 +11,10 @@ const supremeFont = localFont({
 	src: "../../public/fonts/TTF/Supreme-Variable.ttf",
 });
 
+const authorFont = localFont({
+	src: "../../public/fonts/Author-Variable.ttf",
+});
+
 const glockFont = localFont({
 	src: "../../public/fonts/GlockGrotesque-Medium.ttf",
 });
@@ -27,10 +31,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={glockFont.className}>
+			<body className={supremeFont.className}>
 				<Sidebar />
 				<Title />
-
 				{children}
 				<StickyFooter />
 			</body>

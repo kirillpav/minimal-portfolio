@@ -13,10 +13,10 @@ module.exports = {
 			backgroundImage: {
 				"macbook-overlay": "url('/public/imgs/mb16pro.png')",
 			},
-		},
-		colors: {
-			"primary-color": "#FBFBFB",
-			"custom-accent": "#ff4921",
+			colors: {
+				"primary-color": "#FBFBFB",
+				"custom-accent": "#ff4921",
+			},
 		},
 	},
 	plugins: [],

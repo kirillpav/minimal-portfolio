@@ -3,51 +3,18 @@ import Link from "next/link";
 import projectsData from "../../../public/projects.json";
 import { useState } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
+import { ArrowDown } from "lucide-react";
+import ProjectCard from "./ProjectCard";
 
 const MotionLink = motion(Link);
-const linkVariants = {
-	initial: { x: 0 },
-	hover: { x: -20, color: "#ff4921" },
-};
+
 const categoryVariants = {
 	initial: { x: 0 },
 	hover: { x: 20, color: "#ff4921" },
 };
 
-const CustomCursor = ({ mousePosition }) => {
-	const springConfig = { damping: 40, stiffness: 900 };
-	const x = useSpring(mousePosition.x, springConfig);
-	const y = useSpring(mousePosition.y, springConfig);
-	return (
-		<motion.div
-			className="fixed p-3 text-xs top-0 left-0 w-14 h-14 rounded-full bg-custom-accent flex items-center justify-center text-primary-color pointer-events-none z-50 uppercase"
-			style={{
-				left: x,
-				top: y,
-				translateX: "-50%",
-				translateY: "-50%",
-			}}
-		>
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				width="20"
-				height="20"
-				viewBox="0 0 24 24"
-				fill="none"
-				stroke="currentColor"
-				stroke-width="2"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-			>
-				<path d="M5 12h14" />
-				<path d="m12 5 7 7-7 7" />
-			</svg>
-		</motion.div>
-	);
-};
-
 export default function Work() {
-	const projects = Object.values(projectsData.projects).slice(0, 3);
+	const projects = Object.values(projectsData.projects);
 	const [hoveredLink, setHoveredLink] = useState(null);
 	const mouseX = useMotionValue(0);
 	const mouseY = useMotionValue(0);
@@ -62,49 +29,45 @@ export default function Work() {
 	};
 
 	return (
-		<div id="work" className="container mt-10">
-			{hoveredLink !== null && (
-				<CustomCursor mousePosition={{ x: mouseX, y: mouseY }} />
-			)}
+		<div id="work" className="container mt-12">
 			<div className="mx-auto flex flex-col relative">
-				<h3 className="text-primary-color text-center mb-6">Recent Projects</h3>
+				<div className="flex flex-row justify-between mb-6 items-center">
+					<h3 className="text-primary-color text-lg">Portfolio</h3>
 
-				{Object.entries(projects).map(([key, project], index) => (
-					<MotionLink
-						key={key}
-						href={`/work/${encodeURIComponent(
-							project.name.toLowerCase().replace(/ /g, "-")
-						)}`}
-						className="flex flex-row justify-between border-t border-b border-primary-color p-10 items-center group hover:cursor-none"
-						whileHover="hover"
-						initial="initial"
-						onMouseMove={handleMouseMovement}
-						onMouseEnter={() => setHoveredLink(index)}
-						onMouseLeave={() => setHoveredLink(null)}
+					<a
+						href="/work"
+						className="text-primary-color text-xs  hover:text-custom-accent flex flex-row gap-1 items-center"
 					>
-						<motion.p
-							className="text-primary-color text-3xl mt-1"
-							variants={linkVariants}
-							transition={{ duration: 0.2 }}
+						All Projects
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							strokeWidth="2"
+							strokeLinecap="round"
+							strokeLinejoin="round"
 						>
-							{project.name.toUpperCase()}
-						</motion.p>
-						<motion.p
-							className="hidden md:block text-primary-color text-xs"
-							variants={categoryVariants}
-							transition={{ duration: 0.2 }}
+							<path d="M5 12h14" />
+							<path d="m12 5 7 7-7 7" />
+						</svg>
+					</a>
+				</div>
+				<div className="grid grid-cols-2 gap-4">
+					{Object.entries(projects).map(([key, project], index) => (
+						<button
+							key={key}
+							className="flex flex-row justify-between p-10 items-center group border border-slate-800/60 rounded-lg bg-slate-900/40 hover:bg-slate-800 transform duration-200"
 						>
-							{project.category}
-						</motion.p>
-					</MotionLink>
-				))}
-
-				<a
-					href="/work"
-					className="text-primary-color uppercase mt-12 text-xs  hover:text-custom-accent hover:bg-bla transform duration-200 text-center p-4 w-1/4 mx-auto"
-				>
-					See More
-				</a>
+							<motion.p className="text-primary-color text-3xl text-center flex flex-row gap-1 items-center justify-between">
+								{project.name.toUpperCase()}
+								<ArrowDown />
+							</motion.p>
+						</button>
+					))}
+				</div>
 			</div>
 		</div>
 	);
