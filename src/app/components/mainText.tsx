@@ -2,11 +2,15 @@ import styles from "./mainText.module.css";
 
 export default function MainText() {
 	return (
-		<p className={`text-sm text-primary-color mx-auto mt-12 text-left`}>
-			I am an aspiring Software Engineer with a passion for coding, design and
-			creative solutions. Currently, I am a web developer intern at
-			b0arding.com, a hospitality startup based in San Francisco. Additionally,
-			I am a junior studying Computer Science at San Francisco State University.{" "}
+		<p className={`text-md text-primary-color mx-auto mt-12 text-left`}>
+			I’m a junior at San Francisco State University studying Computer Science,
+			with a growing background in full stack development. I enjoy building
+			responsive applications with a focus on user-friendly design and efficient
+			code. My experience spans coding, web design, and creative
+			problem-solving, where I aim to combine technical skills with a clear
+			sense of user needs to build practical solutions. Through internships and
+			project work, I’m building a well-rounded skill set and am prepared to
+			bring a flexible, collaborative approach to development teams.
 		</p>
 	);
 }

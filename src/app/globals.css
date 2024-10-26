@@ -31,6 +31,14 @@ a {
 	text-decoration: none;
 }
 
+.tech-card {
+	transition: all 0.2s;
+}
+
+.tech-card:hover {
+	box-shadow: 0 0 15px -3px rgba(var(--glow-color), var(--glow-opacity));
+}
+
 /* *::before,
 *::after {
 	box-sizing: border-box;

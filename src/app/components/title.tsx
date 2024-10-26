@@ -1,3 +1,9 @@
+import localFont from "next/font/local";
+
+const GlockGrotesque = localFont({
+	src: "../../../public/fonts/GlockGrotesque-Medium.ttf",
+});
+
 export default function Title() {
 	return (
 		<div className="flex flex-col items-center text-center">
@@ -5,7 +11,11 @@ export default function Title() {
 				id="intro"
 				className="mx-auto mt-10 md:mt-24 flex flex-col items-start text-center p-5"
 			>
-				<h1 className="text-primary-color text-7xl">Kirill Pavlov</h1>
+				<h1
+					className={`text-primary-color text-7xl font-bold ${GlockGrotesque.className}`}
+				>
+					Kirill Pavlov
+				</h1>
 
 				<div className="flex flex-row justify-between w-full">
 					<div className="flex flex-col items-start text-left">
