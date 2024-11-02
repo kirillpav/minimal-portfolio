@@ -34,9 +34,15 @@ export default function ProjectCard(project: projectDataProps) {
 				</div>
 
 				{project.url ? (
-					<a href={project.url} className="text-slate-400 underline">
-						link
-					</a>
+					<div className="flex flex-row gap-1">
+						<a href={project.url} className="text-slate-400 underline">
+							link
+						</a>
+						<p className="text-slate-400"> | </p>
+						<a href={project.github} className="text-slate-400 underline">
+							github
+						</a>
+					</div>
 				) : (
 					<a href={project.github} className="text-slate-400 underline">
 						github
