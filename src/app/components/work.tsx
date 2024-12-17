@@ -12,7 +12,7 @@ export default function Work() {
 				<div className="flex flex-row justify-between mb-6 items-center">
 					<h3 className="text-primary-color text-lg">Portfolio</h3>
 
-					<a
+					{/* <a
 						href="/work"
 						className="text-primary-color text-xs  hover:text-custom-accent flex flex-row gap-1 items-center"
 					>
@@ -31,7 +31,7 @@ export default function Work() {
 							<path d="M5 12h14" />
 							<path d="m12 5 7 7-7 7" />
 						</svg>
-					</a>
+					</a> */}
 				</div>
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 					{projects.map((project, index) => (

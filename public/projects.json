@@ -1,5 +1,13 @@
 {
 	"projects": {
+		"Kyiv Optionality Map": {
+			"name": "Kyiv Optionality Map",
+			"url": "",
+			"github": "https://github.com/kirillpav/kyiv-optionality",
+			"img": "/imgs/kyiv-optionality.jpeg",
+			"stack": ["Web", "Next.js"],
+			"desc": "This is a map of the Kyiv region that displays the open restaurants, bars, and other places in the city. The map is interactive, allowing users to filter restaurants by cuisine, price, and rating. The map was designed in Figma and implemented using React.js, Mapbox GL, and Tailwind CSS."
+		},
 		"My Library": {
 			"name": "My Library",
 			"url": "https://book-club-two.vercel.app/",
