@@ -2,41 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* Light theme variables */
+  --background: 255 255 255; /* white */
+  --foreground: 0 0 0; /* black */
+  --card: 255 255 255; /* white */
+  --card-foreground: 0 0 0; /* black */
+  --primary: 5 29 181; /* #051DB5 */
+  --primary-foreground: 255 255 255; /* white */
+  --secondary: 245 245 245; /* #f5f5f5 */
+  --secondary-foreground: 0 0 0; /* black */
+  --muted: 245 245 245; /* #f5f5f5 */
+  --muted-foreground: 115 115 115; /* #737373 */
+  --border: 229 229 229; /* #e5e5e5 */
+  --accent: 245 245 245; /* #f5f5f5 */
+  --accent-foreground: 0 0 0; /* black */
+}
+
 ::selection {
-	background: #ff4921;
+  background: #051db5;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	background-color: black;
-	/* min-height: 200vh; */
+  background-color: rgb(var(--background));
+  color: rgb(var(--foreground));
 }
 
 html,
 body {
-	height: 100%; /* Ensure the html and body elements are at least 100% height */
+  height: 100%; /* Ensure the html and body elements are at least 100% height */
 }
 
 a:not([class]) {
-	text-decoration-skip-ink: auto;
-	color: currentColor;
+  text-decoration-skip-ink: auto;
+  color: currentColor;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .tech-card {
-	transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .tech-card:hover {
-	box-shadow: 0 0 15px -3px rgba(var(--glow-color), var(--glow-opacity));
+  box-shadow: 0 0 15px -3px rgba(var(--glow-color), var(--glow-opacity));
 }
 
 /* *::before,

@@ -4,15 +4,15 @@ import projectsData from "../../../public/projects.json";
 
 import ProjectCard from "./ProjectCard";
 export default function Work() {
-	const projects = Object.values(projectsData.projects);
+  const projects = Object.values(projectsData.projects);
 
-	return (
-		<div id="work" className="container mt-12">
-			<div className="mx-auto flex flex-col relative">
-				<div className="flex flex-row justify-between mb-6 items-center">
-					<h3 className="text-primary-color text-lg">Portfolio</h3>
+  return (
+    <div id="work" className="container mt-12">
+      <div className="mx-auto flex flex-col relative">
+        <div className="flex flex-row justify-between mb-6 items-center">
+          <h3 className="text-foreground text-lg">Portfolio</h3>
 
-					{/* <a
+          {/* <a
 						href="/work"
 						className="text-primary-color text-xs  hover:text-custom-accent flex flex-row gap-1 items-center"
 					>
@@ -32,21 +32,21 @@ export default function Work() {
 							<path d="m12 5 7 7-7 7" />
 						</svg>
 					</a> */}
-				</div>
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-					{projects.map((project, index) => (
-						<ProjectCard
-							key={project.name}
-							name={project.name}
-							description={project.desc}
-							github={project.github}
-							url={project.url}
-							image={project.img}
-							stack={project.stack}
-						/>
-					))}
-				</div>
-			</div>
-		</div>
-	);
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {projects.map((project, index) => (
+            <ProjectCard
+              key={project.name}
+              name={project.name}
+              description={project.desc}
+              github={project.github}
+              url={project.url}
+              image={project.img}
+              stack={project.stack}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 }
