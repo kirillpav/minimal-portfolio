@@ -27,6 +27,12 @@ export default function NavigationBar() {
         >
           bookshelf
         </a>
+        <a
+          className="text-sm text-foreground hover:text-primary transform duration-200 border-b-2 hover:border-b-0 border-b-primary"
+          href="/projects"
+        >
+          projects
+        </a>
       </div>
     </div>
   );

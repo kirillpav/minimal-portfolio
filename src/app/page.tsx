@@ -9,8 +9,8 @@ export default function Home() {
           <span className="font-medium">kirill pavlov</span>
         </h1>
         <p>
-          i'm a software engineer focusing on user experience and sophisticated
-          design and a rising senior at{" "}
+          I&apos;m a software engineer focusing on user experience and
+          sophisticated design and a rising senior at{" "}
           <a
             href="https://www.sfsu.edu/ "
             className="text-purple-400 hover:text-purple-600 transform duration-200"
@@ -28,7 +28,7 @@ export default function Home() {
           </a>{" "}
           and am now living in San Francisco.
           <br /> <br />
-          at the moment i am interning at{" "}
+          this summer i interned at{" "}
           <a
             href="https://www.creatio.com/"
             className="text-orange-400 hover:text-orange-600 transform duration-200"
@@ -36,10 +36,11 @@ export default function Home() {
           >
             Creatio
           </a>
-          , where i am building a semantic search engine for their marketplace.
+          , where i built a semantic search engine for their marketplace.
           <br />
           <br />
-          i'm passionate about reading, making music and swimming.
+          I&apos;m passionate about reading, making music and maximising my
+          health!
         </p>
       </div>
     </>

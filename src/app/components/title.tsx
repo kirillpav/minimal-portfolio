@@ -10,7 +10,7 @@ export default function Title() {
   return (
     <div className="flex flex-col items-start w-full md:mx-auto md:w-1/2">
       <p className="text-foreground text-2xl md:text-3xl font-light">
-        i'm <span className="font-medium">kirill</span>
+        I&apos;m <span className="font-medium">kirill</span>
       </p>
     </div>
   );

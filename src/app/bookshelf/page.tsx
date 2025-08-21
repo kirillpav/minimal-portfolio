@@ -10,7 +10,7 @@ export default function ReadingList() {
       </h1>
       <p className="text-foreground">
         these are some of my favorite books. this is a collection of sci-fi,
-        fiction and non-fiction books that i've read <br />
+        fiction and non-fiction books that I&apos;ve read <br />
       </p>
       <BooksGrid />
     </div>

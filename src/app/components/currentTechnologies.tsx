@@ -42,7 +42,7 @@ export default function CurrentTechnologies() {
 
   return (
     <div className="mt-12 w-full">
-      <h2 className="text-foreground text-lg">technologies</h2>
+      <h2 className="text-foreground text-lg">tech im currently using</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
         {technologiesArray.map((item) => (
           <TechnologiesCard
