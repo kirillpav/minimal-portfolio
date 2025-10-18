@@ -13,7 +13,7 @@ module.exports = {
     extend: {
       colors: {
         "primary-color": "#FBFBFB",
-        "custom-accent": "#051DB5",
+        "custom-accent": "#FB9B2A",
         background: "rgb(var(--background) / <alpha-value>)",
         foreground: "rgb(var(--foreground) / <alpha-value>)",
         card: {
