@@ -1,23 +1,20 @@
-import Title from "./components/title";
-import BooksGrid from "./components/BooksGrid";
+import Clock from "./components/Clock";
 
 export default function Home() {
   return (
     <>
       <div className="flex flex-col items-start w-full md:mx-auto md:w-1/2">
-        <h1 className="text-foreground text-2xl md:text-3xl font-light mb-6">
-          <span className="font-medium">kirill pavlov</span>
-        </h1>
+        <div className="flex flex-row justify-between w-full">
+          <span className="font-medium text-3xl">kirill pavlov</span>
+          <div className="flex flex-col items-end">
+            <span className="text-xs">SF </span>
+            <Clock />
+          </div>
+        </div>
+
         <p>
-          I&apos;m a software engineer focusing on user experience and
-          sophisticated design and a rising senior at{" "}
-          <a
-            href="https://www.sfsu.edu/ "
-            className="text-purple-400 hover:text-purple-600 transform duration-200"
-            target="_blank"
-          >
-            sfsu.
-          </a>{" "}
+          I&apos;m an aspiring design engineer focusing on user experience and
+          sophisticated animations
           <br /> <br />i was born in Greece, grew up in{" "}
           <a
             href="https://war.ukraine.ua/donate/"
@@ -38,10 +35,21 @@ export default function Home() {
           </a>
           , where i built a semantic search engine for their marketplace.
           <br />
-          <br />
-          I&apos;m passionate about reading, making music and maximising my
-          health!
+          <br />I love{" "}
+          <a
+            className="hover:text-custom-accent transform duration-200"
+            href="https://www.goodreads.com/user/show/159310567-kirill-pavlov"
+          >
+            reading
+          </a>
+          , making music and lifting
         </p>
+        {/*<iframe
+          allow="autoplay *; encrypted-media *;"
+          height="150"
+          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+          src="https://embed.music.apple.com/us/album/pixelated-kisses/1838036375?i=1838036376"
+        ></iframe>*/}
       </div>
     </>
   );

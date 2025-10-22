@@ -4,19 +4,19 @@ export default function Socials() {
       <div className="flex flex-row items-center justify-between gap-2">
         <a
           href="https://www.linkedin.com/in/kirillpavlov2020/"
-          className="text-sm text-foreground hover:text-primary transform duration-200 border-b-2 border-b-primary"
+          className="text-sm text-foreground hover:text-custom-accent transform duration-200 border-b-2 border-b-custom-accent"
         >
           linkedin
         </a>
         <a
           href="https://github.com/kirillpav"
-          className="text-sm text-foreground hover:text-primary transform duration-200 border-b-2 border-b-primary"
+          className="text-sm text-foreground hover:text-custom-accent transform duration-200 border-b-2 border-b-custom-accent"
         >
           github
         </a>
         <a
           href="mailto:2020kirillp@gmail.com"
-          className="text-sm text-foreground hover:text-primary transform duration-200 border-b-2 border-b-primary"
+          className="text-sm text-foreground hover:text-custom-accent transform duration-200 border-b-2 border-b-custom-accent"
         >
           email
         </a>
