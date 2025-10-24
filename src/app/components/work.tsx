@@ -34,7 +34,7 @@ export default function Work() {
 					</a> */}
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <ProjectCard
               key={project.name}
               name={project.name}
