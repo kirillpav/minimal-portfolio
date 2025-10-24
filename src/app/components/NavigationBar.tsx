@@ -15,7 +15,6 @@ export default function NavigationBar() {
 
   const navItems = [
     { href: "/", label: "home" },
-    { href: "/about", label: "about" },
     { href: "/bookshelf", label: "bookshelf" },
     { href: "/projects", label: "projects" },
   ];

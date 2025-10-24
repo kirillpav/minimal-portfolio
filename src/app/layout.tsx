@@ -18,6 +18,20 @@ const glockFont = localFont({
   src: "../../public/fonts/GlockGrotesque-Medium.ttf",
 });
 
+const fixelFont = localFont({
+  src: [
+    {
+      path: "../../public/fonts/FixelVariable.ttf",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/FixelVariableItalic.ttf",
+      style: "italic",
+    },
+  ],
+  variable: "--font-fixel",
+});
+
 export const metadata: Metadata = {
   title: "Kirill Pavlov",
   description: "Portfolio Website",
@@ -30,7 +44,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={supremeFont.className}>
+      <body className={fixelFont.className}>
         <NavigationBar />
         {children}
         <Socials />
