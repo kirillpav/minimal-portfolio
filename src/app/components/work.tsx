@@ -42,7 +42,6 @@ export default function Work() {
               github={project.github}
               url={project.url}
               image={project.img}
-              stack={project.stack}
             />
           ))}
         </div>
