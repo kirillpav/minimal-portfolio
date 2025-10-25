@@ -25,11 +25,11 @@ export async function getReadingStats(): Promise<ReadingStats> {
   const totalBooks = booksData.length;
   const totalPages = booksData.reduce(
     (sum, book) => sum + book.total_read_pages,
-    0,
+    0
   );
   const totalTime = booksData.reduce(
     (sum, book) => sum + book.total_read_time,
-    0,
+    0
   );
 
   const hours = Math.floor(totalTime / 3600);
