@@ -1,17 +1,12 @@
 "use client";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useEffect } from "react";
 
 export default function NavigationBar() {
   const pathname = usePathname();
-  const navRef = useRef<HTMLDivElement>(null);
-  const [underlineStyle, setUnderlineStyle] = useState({
-    width: 0,
-    left: 0,
-  });
-
-  const [initialized, setInitialized] = useState<Boolean>(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const activeTabElementRef = useRef<HTMLAnchorElement>(null);
 
   const navItems = [
     { href: "/", label: "home" },
@@ -20,51 +15,61 @@ export default function NavigationBar() {
   ];
 
   useEffect(() => {
-    if (!navRef.current) return;
+    const container = containerRef.current;
+    if (pathname && container) {
+      const activeTabElement = activeTabElementRef.current;
+      if (activeTabElement) {
+        const { offsetLeft, offsetWidth } = activeTabElement;
+        const clipLeft = offsetLeft;
+        const clipRight = offsetLeft + offsetWidth;
 
-    const activeLink = navRef.current.querySelector(
-      `a[href="${pathname}"]`,
-    ) as HTMLElement;
-
-    if (activeLink) {
-      const navRect = navRef.current.getBoundingClientRect();
-      const linkRect = activeLink.getBoundingClientRect();
-
-      // check where to align the underline
-      setUnderlineStyle({
-        width: linkRect.width,
-        left: linkRect.left - navRect.left,
-      });
-
-      if (!initialized) {
-        setInitialized(true);
+        container.style.clipPath = `inset(0 ${Number(
+          100 - (clipRight / container.offsetWidth) * 100
+        ).toFixed()}% 0 ${Number(
+          (clipLeft / container.offsetWidth) * 100
+        ).toFixed()}% round 17px)`;
       }
     }
-  }, [pathname, initialized]);
+  }, [pathname]);
 
   return (
     <div className="flex flex-col items-start w-full md:mx-auto md:w-1/2 mt-32">
-      <div
-        ref={navRef}
-        className="relative flex flex-row, items-center, justify-between, gap-2"
-      >
-        {navItems.map((item) => (
-          <Link
-            key={item.href}
-            className="text-sm text-foreground hover:text-custom-accent transition-colors duration-500 py-1"
-            href={item.href}
-          >
-            {item.label}
-          </Link>
-        ))}
-        {/* underline */}
+      <div className="relative flex flex-col w-fit">
+        {/* Base navigation */}
+        <ul className="relative flex gap-2 text-foreground">
+          {navItems.map((item) => (
+            <li key={item.href}>
+              <Link className="text-sm py-1 px-3 block" href={item.href}>
+                {item.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+        {/* Overlay with clip-path */}
         <div
-          className={`absolute bottom-0 h-0.5 bg-custom-accent transition-all duration-300 ease-out ${initialized ? "transition-all duration-300" : ""} `}
+          aria-hidden
+          className="absolute top-0 left-0 w-full overflow-hidden transition-all duration-300 ease-out"
+          ref={containerRef}
           style={{
-            width: `${underlineStyle.width}px`,
-            left: `${underlineStyle.left}px`,
+            clipPath: "inset(0 75% 0 0% round 17px)",
           }}
-        ></div>
+        >
+          <ul className="flex gap-2 bg-custom-accent text-background rounded-full">
+            {navItems.map((item) => (
+              <li key={`overlay-${item.href}`}>
+                <Link
+                  className="text-sm py-1 px-3 block"
+                  href={item.href}
+                  ref={pathname === item.href ? activeTabElementRef : null}
+                  tabIndex={-1}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );
