@@ -14,7 +14,7 @@
       "github": "https://github.com/kirillpav/gutly",
       "img": "/imgs/gutly.jpeg",
       "stack": ["iOS", "Swift"],
-      "desc": "IBS sucks, so I built an app to help me track my symptoms and find ways to improve my gut health."
+      "desc": "IBS sucks, so I built an app to help me track my symptoms and find ways to improve my gut health. (currently in testflight)"
     },
 
     "Kyiv Optionality Map": {

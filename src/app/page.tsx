@@ -1,16 +1,10 @@
-import Clock from "./components/Clock";
+import ContributionGraph from "./components/ContributionGraph";
 
 export default function Home() {
   return (
     <>
       <div className="flex flex-col items-start w-full md:mx-auto md:w-1/2">
-        <div className="flex flex-row justify-between w-full">
-          <span className="font-medium text-3xl">kirill pavlov</span>
-          <div className="flex flex-col items-end">
-            <span className="text-xs">SF </span>
-            <Clock />
-          </div>
-        </div>
+        <span className="font-medium text-3xl">kirill pavlov</span>
 
         <p>
           I&apos;m an aspiring design engineer focusing on user experience and
@@ -42,8 +36,13 @@ export default function Home() {
           >
             reading
           </a>
-          , making music and lifting
+          , making music and shipping
         </p>
+
+        <div className="mt-12 w-full">
+          <ContributionGraph username="kirillpav" />
+        </div>
+
         {/*<iframe
           allow="autoplay *; encrypted-media *;"
           height="150"
