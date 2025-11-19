@@ -1,5 +1,22 @@
 {
   "projects": {
+    "Telegram Market Bot": {
+      "name": "Job Listing Telegram Bot",
+      "url": "https://t.me/SimplifyNewGradBot",
+      "github": "https://github.com/kirillpav/newgrad-bot",
+      "img": "/imgs/telegram-market-bot.jpeg",
+      "stack": ["Python", "Telegram Bot API"],
+      "desc": "To get me at least a 1% chance in this market. Deployed on Railway."
+    },
+    "Gutly": {
+      "name": "Gutly",
+      "url": "https://www.trygutly.app/",
+      "github": "https://github.com/kirillpav/gutly",
+      "img": "/imgs/gutly.jpeg",
+      "stack": ["iOS", "Swift"],
+      "desc": "IBS sucks, so I built an app to help me track my symptoms and find ways to improve my gut health."
+    },
+
     "Kyiv Optionality Map": {
       "name": "Kyiv Optionality Map",
       "url": "",
