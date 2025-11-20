@@ -29,7 +29,8 @@ export default function Home() {
           </a>
           , where i built a semantic search engine for their marketplace.
           <br />
-          <br />I love{" "}
+          <br />
+          In my free time I enjoy{" "}
           <a
             className="hover:text-custom-accent transform duration-200"
             href="https://www.goodreads.com/user/show/159310567-kirill-pavlov"
