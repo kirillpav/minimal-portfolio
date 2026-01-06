@@ -20,26 +20,26 @@ export default function ContributionGraph({
   const [totalContributions, setTotalContributions] = useState(0);
 
   useEffect(() => {
+    const fetchContributions = async () => {
+      try {
+        // Fetch contribution data from GitHub
+        const response = await fetch(
+          `/api/github-contributions?username=${username}`
+        );
+        if (response.ok) {
+          const data = await response.json();
+          setContributions(data.contributions);
+          setTotalContributions(data.total);
+        }
+      } catch (error) {
+        console.error("Error fetching contributions:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
     fetchContributions();
   }, [username]);
-
-  const fetchContributions = async () => {
-    try {
-      // Fetch contribution data from GitHub
-      const response = await fetch(
-        `/api/github-contributions?username=${username}`
-      );
-      if (response.ok) {
-        const data = await response.json();
-        setContributions(data.contributions);
-        setTotalContributions(data.total);
-      }
-    } catch (error) {
-      console.error("Error fetching contributions:", error);
-    } finally {
-      setLoading(false);
-    }
-  };
 
   const getLevelColor = (level: number) => {
     // Using site's custom orange #FB9B2A

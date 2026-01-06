@@ -92,7 +92,11 @@ function getContributionLevel(count: number): 0 | 1 | 2 | 3 | 4 {
 }
 
 function generateMockData() {
-  const contributions = [];
+  const contributions: {
+    date: string;
+    count: number;
+    level: 0 | 1 | 2 | 3 | 4;
+  }[] = [];
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
